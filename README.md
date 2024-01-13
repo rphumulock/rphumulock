@@ -1,8 +1,7 @@
 - 👋 Hi, I’m @rphumulock
 - 👀 I’m interested in ... Game AI
 - 🌱 I’m currently learning ... Event Sourcing / CQRS
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 📫 How to reach me "rphumulock@gmail.com"
 
 <!---
 rphumulock/rphumulock is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
