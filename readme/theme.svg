@@ -69,7 +69,7 @@
         }
 
         .fadeInOut {
-            animation: fadeInOut 6s ease-in-out infinite;
+            animation: fadeInOut 4s ease-in-out infinite;
             display: inline-block;
         }
 
