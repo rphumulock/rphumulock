@@ -35,6 +35,30 @@
         border-color: var(--color-background);
       }
 
+      .main {
+        width: 330px;
+        height: 330px;
+        border: 1px solid var(--color-main);
+        position: absolute;
+        top: 0; 
+        bottom: 0; 
+        left: 0; 
+        right: 0;
+        margin: auto;
+        border-radius: 50%; 
+      }
+
+      .circle {
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(var(--color-main), var(--color-primary), var(--color-secondary));
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: rotateAroundBorder 6s linear infinite;
+      }
+
       .container {
         background: var(--color-background);
         height: calc(100% - 10px);
@@ -152,6 +176,28 @@
         display: inline-block;
       }
 
+      @keyframes rotateAroundBorder {
+        0%, 100% {
+            top: 0;
+            left: 0;
+        }
+        25% {
+            top: 0;
+            left: 100%;
+            transform: translateX(-100%);
+        }
+        50% {
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%, -100%);
+        }
+        75% {
+            top: 100%;
+            left: 0;
+            transform: translateY(-100%);
+        }
+      }
+
       @keyframes border {
         0% { background-position: 0 0; }
         20% { background-position: 100% 0; }
@@ -242,6 +288,7 @@
       }
     </style>
     <div class='body'>
+      <div class="circle"></div>
       <div class='container'>
         <h1>
           <a href="https://github.com/rphumulock">
