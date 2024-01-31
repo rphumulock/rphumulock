@@ -36,9 +36,9 @@
 
         .container {
           --color-main: #282a36;
-          --color-primary: #ff79c6;
+          --color-primary: #8be9fd;
           --color-secondary: #282a36; /* or #50fa7b */
-          --color-tertiary: #ff79c6; /* or #ffffff */
+          --color-tertiary: #8be9fd; /* or #ffffff */
 
           background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
           background-size: 400% 400%;
@@ -47,7 +47,7 @@
           width: 100%;
           height: 100%;
 
-          border-radius: 50%;
+          border-radius: 5%;
 
           display: flex;
           justify-content: center;
