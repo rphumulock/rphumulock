@@ -13,12 +13,12 @@
       }
 
       .body {
-        --color-main: #ff9b71;
-        --color-primary: #ff4444;
-        --color-secondary: #e8e677;
-        --color-background: #0d1117;
-        --color-link: #fef29e;
-        --color-link-active: #ff4444;
+        --color-main: #bd93f9;        /* Dracula's purple */
+        --color-primary: #ff79c6;     /* Dracula's pink */
+        --color-secondary: #50fa7b;   /* Dracula's green */
+        --color-background: #282a36;  /* Dracula's background, a very dark gray */
+        --color-link: #8be9fd;        /* Dracula's cyan, good for links */
+        --color-link-active: #ff5555; /* Dracula's red, suitable for active links or highlights */
 
         height: 400px;
         width: 100%;
@@ -64,21 +64,21 @@
       }
       h1 a span:nth-child(1) {
         color: var(--color-main);
-        margin-bottom: 6px;
+        margin-bottom: 2px;
         animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.3) -1s 1;
       }
       h1 a span:nth-child(1) em {
         margin-top: 30px;
         line-height: 0rem;
-        margin-bottom: -10px;
+        margin-bottom: -6px;
       }
       h1 a span:nth-child(2) {
         color: var(--color-primary);
-        margin-bottom: 6px;
+        margin-bottom: 2px;
         animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.2) -0.9s 1;
       }
       h1 a span:nth-child(2) em {
-        margin-top: -6px;
+        margin-top: -2px;
         line-height: 1rem;
       }
       h1 a span:nth-child(3) {
@@ -86,7 +86,7 @@
         animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.1) -0.8s 1;
       }
       h1 a span:nth-child(3) em {
-        margin-top: -36px;
+        margin-top: -33px;
         line-height: 3rem;
       }
       h1 a:hover span,
@@ -120,7 +120,7 @@
         display: flex;
         letter-spacing: 0.125vw;
       }
-      ul li a {
+      ul li span {
         margin-left: 5px;
       }
       ul li a:hover,
@@ -135,6 +135,21 @@
         display: inline-block;
         transform-origin: 70% 70%;
         animation: hi 3s linear -2s infinite;
+      }
+
+      .springUp {
+        animation: springUp 1s ease-out infinite;
+        display: inline-block;
+      }
+
+      .fadeInOut {
+        display: inline-block;
+        animation: fadeInOut 4s ease-in-out infinite;
+      }
+
+      .fade {
+        animation: fadeInOut 4s ease-in-out infinite;
+        display: inline-block;
       }
 
       @keyframes border {
@@ -168,14 +183,32 @@
         100% { opacity: 1; }
       }
 
+      @keyframes fadeInOut {
+        0%, 100% { 
+            opacity: 0; 
+        }
+        50% { 
+            opacity: 1; 
+        }
+      }
+
+      @keyframes springUp {
+        0% { transform: translateY(10%); }
+        50% { transform: translateY(0%); }
+        65% { transform: translateY(1%); }
+        80% { transform: translateY(-2%); }
+        90% { transform: translateY(2%); }
+        100% { transform: translateY(0); }
+      }
+    
       @media (prefers-color-scheme: light) {
         .body {
-          --color-main: #9B5DE5;
-          --color-primary: #F15BB5;
-          --color-secondary: #00BBF9;
-          --color-background: #ffffff;
-          --color-link: #00BBF9;
-          --color-link-active: #F15BB5;
+            --color-main: #FFC3A0;        /* Soft peach for a light, airy feel */
+            --color-primary: #FFAFBD;     /* Light pink, adding a gentle, sweet touch */
+            --color-secondary: #BDE0FE;   /* Pale blue, for a cool, calming effect */
+            --color-background: #FFFFFC;  /* Almost white, clean and simple */
+            --color-link: #A0C4FF;        /* Sky blue, soft yet noticeable for links */
+            --color-link-active: #BDB2FF; /* Light purple, distinct yet muted for active links */
         }
       }
 
@@ -185,6 +218,14 @@
         }
 
         .hi {
+          animation: none;
+        }
+
+        .springUp {
+          animation: none;
+        }
+
+        .fadeInOut {
           animation: none;
         }
 
@@ -203,7 +244,7 @@
     <div class='body'>
       <div class='container'>
         <h1>
-          <a href="https://github.com/nikolalsvk">
+          <a href="https://github.com/rphumulock">
             <span><em>peter humulock</em></span>
             <span><em>peter humulock</em></span>
             <span><em>peter humulock</em></span>
@@ -211,13 +252,13 @@
         </h1>
         <section class='items'>
           <ul>
-            <li>Software Engineer</li>
+            <li>Software Engineer<a href="https://rpgh.com"><span class='hi'>👋</span></a></li>
           </ul>
           <ul>
-            <li>at <a href="https://rpgh.com"><span class='hi'>👋</span></a></li>
+            <li>Currently learning CQRS pattern<span class='springUp'>🌱</span></li>
           </ul>
           <ul>
-            <li><a href="mailto:rphumulock@gmail.com" role="button">📫</a></li>
+            <li>Interested in Game AI<span class='fadeInOut'>👀</span></li>
           </ul>
         </section>
       </div>

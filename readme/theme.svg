@@ -113,3 +113,21 @@
     </div>
   </foreignObject>
 </svg>
+
+  .spring {
+        animation: springUp 1s ease-out infinite;
+        display: inline-block;
+      }
+
+      .fade {
+        animation: fadeInOut 4s ease-in-out infinite;
+        display: inline-block;
+      }
+
+         
+          <ul>
+            <li>Currently learning CQRS pattern<span class="spring">🌱</span></li>
+          </ui>
+          <ul>
+            <li>How to reach me<a href="mailto:rphumulock@gmail.com" role="button">📫</a></li>
+          </ul>
