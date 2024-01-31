@@ -4,7 +4,7 @@
 - 📫 How to reach me "rphumulock@gmail.com"
 
 <div style="width: 100%;">
-  <img src="theme.svg" style="width: 100%;" alt="Click to see the source">
+  <img src="readme/theme.svg" style="width: 100%;" alt="Click to see the source">
 </div>
 
 <!---
