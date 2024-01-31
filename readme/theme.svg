@@ -44,6 +44,12 @@
         }
 
         .container {
+          --color-main: #282a36;
+          --color-primary: #8be9fd;
+          --color-secondary: #282a36; /* or #50fa7b */
+          --color-tertiary: #8be9fd; /* or #ffffff */
+
+
           width: 100%;
           height: 100%;
 
@@ -123,15 +129,15 @@
   </foreignObject>
 </svg>
 
-<!--
-      --color-main: #282a36;
-          --color-primary: #8be9fd;
-          --color-secondary: #282a36; /* or #50fa7b */
-          --color-tertiary: #8be9fd; /* or #ffffff */
 
-          background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
+
+
+<!--  
+
+    background:
           background-size: 400% 400%;
           animation: gradient 15s ease infinite;
-
-
--->
+  
+  linear-gradient(-45deg, var-\-color-main), var(-\-color-primary), var(-\-color-secondary), var(-\-color-tertiary)); 
+  
+  -->
