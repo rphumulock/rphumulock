@@ -64,7 +64,7 @@
         }
 
         .spring {
-          animation: springUp 0.6s ease-out infinite;
+          animation: springUp 1s ease-out infinite;
           display: inline-block;
         }
 
@@ -117,7 +117,7 @@
           }
 
           .spring {
-              animation: none;
+            animation: none;
           }
 
           .fadeInOut {
