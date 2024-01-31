@@ -53,7 +53,7 @@
         border: 24px solid;
         border-color: var(--color-background);
         animation: border 5s linear infinite;
-        animation: bounceIn 5s linear;
+        animation: bounceIn 3s linear;
         transition: border-width 0.5s ease-in-out;
       }
 
