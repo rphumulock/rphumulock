@@ -48,12 +48,12 @@
         justify-content: center;
 
         background-image: radial-gradient(var(--color-main), var(--color-primary), var(--color-secondary));
-        animation: border 5s linear infinite;
         background-size: 200% 200%;
         background-position: 0 0;
         border: 24px solid;
         border-color: var(--color-background);
-        animation: bounceIn 5s linear infinite;
+        animation: border 5s linear infinite;
+        animation: bounceIn 5s linear;
         transition: border-width 0.5s ease-in-out;
       }
 
