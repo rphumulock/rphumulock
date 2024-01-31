@@ -115,7 +115,7 @@
         <div>
           <h5>Hi there, my name is @rphumulock <div class="hi">👋</div></h5>
           <h5>I’m interested in Game AI <div class="fadeInOut">👀</div></h5>
-          <h5>I’m currently learning Event Sourcing and CQRS <div class="spring">🌱</div></h5>
+          <h5>I’m currently learning Event Sourcing and CQRS <div class="">🌱</div></h5>
           <h5>How to reach me "rphumulock@gmail.com" <div class="hi">📫</div></h5>
         </div>
       </div>
