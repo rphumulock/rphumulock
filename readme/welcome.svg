@@ -13,6 +13,25 @@
         box-sizing: border-box;
       }
 
+      @keyframes bounceIn {
+        0% {
+          border-width: 24px;
+          transform: scale(1);
+        }
+        30% {
+          border-width: 10px;
+          transform: scale(1.1);
+        }
+        60% {
+          border-width: 6px;
+          transform: scale(0.95);
+        }
+        100% {
+          border-width: 24px;
+          transform: scale(1);
+        }
+      }
+
       .body {
         --color-main: #bd93f9;        /* Dracula's purple */
         --color-primary: #ff79c6;     /* Dracula's pink */
@@ -34,6 +53,8 @@
         background-position: 0 0;
         border: 24px solid;
         border-color: var(--color-background);
+        animation: bounceIn 5s linear infinite;
+        transition: border-width 0.5s ease-in-out;
       }
 
       .main {
