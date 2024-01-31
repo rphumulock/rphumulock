@@ -56,7 +56,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        animation: rotateAroundBorder 6s linear infinite;
+        animation: rotateAroundBorder 10s linear infinite;
       }
 
       .container {
@@ -309,8 +309,8 @@
           </ul>
         </section>
       </div>
+      <small>Inspired by <a href="https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/"></a></small>
     </div>
-    <small>Inspired by <a href="https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/"></a></small>
   </div>
   </foreignObject>
 </svg>
