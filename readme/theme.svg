@@ -73,7 +73,10 @@
       </style>
 
       <div class="container">
-        <h1>Hi there, my name is Nikola <div class="hi">👋</div></h1>
+        <h1>Hi there, my name is @rphumulock <div class="hi">👋</div></h1>
+        <h1>I’m interested in ... Game AI <div class="hi">👀</div></h1>
+        <h1>I’m currently learning ... Event Sourcing / CQRS <div class="hi">🌱</div></h1>
+        <h1>How to reach me "rphumulock@gmail.com" <div class="hi">📫</div></h1>
       </div>
     </div>
   </foreignObject>
