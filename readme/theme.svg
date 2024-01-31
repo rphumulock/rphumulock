@@ -37,8 +37,8 @@
         .container {
           --color-main: #282a36;
           --color-primary: #ff79c6;
-          --color-secondary: #8be9fd; /* or #50fa7b */
-          --color-tertiary: #f8f8f2; /* or #ffffff */
+          --color-secondary: #282a36; /* or #50fa7b */
+          --color-tertiary: #ff79c6; /* or #ffffff */
 
           background: linear-gradient(-45deg, var(--color-main), var(--color-primary), var(--color-secondary), var(--color-tertiary));
           background-size: 400% 400%;
@@ -65,10 +65,12 @@
 
         .spring {
           animation: springUp 1s ease-out infinite;
+           display: inline-block;
         }
 
         .fadeInOut {
             animation: fadeInOut 6s ease-in-out infinite;
+            display: inline-block;
         }
 
         @keyframes fadeInOut {
@@ -79,7 +81,6 @@
                 opacity: 1; 
             }
         }
-
 
         @media (prefers-color-scheme: light) {
           .container {
