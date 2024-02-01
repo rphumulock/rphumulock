@@ -52,8 +52,7 @@
         background-position: 0 0;
         border: 24px solid;
         border-color: var(--color-background);
-        animation: border 5s linear infinite;
-        animation: bounceIn 3s linear;
+        animation: border 5s linear infinite, bounceIn 3s linear;
         transition: border-width 0.5s ease-in-out;
       }
 
